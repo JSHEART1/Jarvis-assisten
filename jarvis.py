@@ -28,7 +28,7 @@ def wishMe():
     else:
         speak("Good Evening!")  
 
-    speak("I am Michell Sir. Please tell me how may I help you")       
+    speak("I am JSHEART. Please tell me how may I help you")       
 
 def takeCommand():
     #It takes microphone input from the user and returns string output
@@ -80,8 +80,10 @@ if __name__ == "__main__":
             webbrowser.open("google.com")
 
         elif 'open stackoverflow' in query:
-            webbrowser.open("stackoverflow.com")   
-
+            webbrowser.open("stackoverflow.com") 
+            
+        elif 'open facebook' in query:
+            webbrowser.open("facebook.com") 
 
         elif 'play music' in query:
             music_dir = 'D:\\Non Critical\\songs\\Favorite Songs2'
@@ -94,16 +96,16 @@ if __name__ == "__main__":
             speak(f"Sir, the time is {strTime}")
 
         elif 'open code' in query:
-            codePath = "C:\\Users\\Haris\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
+            codePath = "C:\\Users\\JSHEART\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
             os.startfile(codePath)
 
-        elif 'email to ano' in query:
+        elif 'email to girl friends' in query:
             try:
                 speak("What should I say?")
                 content = takeCommand()
                 to = "anonymoust1234556@gmail.com"    
                 sendEmail(to, content)
-                speak("Email has been sent!")
+                speak("Email is not sent that is sent is a feeling !!")
             except Exception as e:
                 print(e)
-                speak("Sorry my friend harry bhai. I am not able to send this email")
+                speak("sorry dude i forgot that i don't have a girlfriend -_-")
